@@ -143,31 +143,14 @@ while True:
 
     pygame.draw.rect(okno, (0, 0, 0), (288, 288, 144, 144))
 
-    pygame.draw.line(okno, (255, 255, 255), (288, 288), (430, 430))
-    pygame.draw.line(okno, (255, 255, 255), (288, 430), (431, 288))
+    #pygame.draw.line(okno, (255, 255, 255), (288, 288), (430, 430))
+    #pygame.draw.line(okno, (255, 255, 255), (288, 430), (431, 288))
 
     pygame.draw.line(okno, (255, 255, 0), (286, 430), (429, 430))
-    #pygame.draw.line(okno, (255, 255, 0), (291, 429), (428, 429))
-    #pygame.draw.line(okno, (255, 255, 0), (292, 428), (427, 428))
-    #pygame.draw.line(okno, (255, 255, 0), (293, 427), (426, 427))
-    #pygame.draw.line(okno, (255, 255, 0), (294, 426), (425, 426))
-    #pygame.draw.line(okno, (255, 255, 0), (295, 425), (424, 425))
-    #pygame.draw.line(okno, (255, 255, 0), (296, 424), (423, 424))
-    #pygame.draw.line(okno, (255, 255, 0), (297, 423), (422, 423))
-    #pygame.draw.line(okno, (255, 255, 0), (298, 422), (421, 422))
-    #pygame.draw.line(okno, (255, 255, 0), (299, 421), (420, 421))
-    #pygame.draw.line(okno, (255, 255, 0), (300, 420), (419, 420))
-    #pygame.draw.line(okno, (255, 255, 0), (301, 419), (418, 419))
-
-    do{
-	pygame.draw.line(okno(255,255,0), (286,430), (429,430));
-	d++;
-	e--;
-	g++;
-	h--;
-}while(d!=wartosc docelowa && e!=wartosc docelowa && f!=wartosc docelowa && g!=wartosc docelowa);
-
-
+    pygame.draw.polygon(okno, (255, 255, 0),((286, 430),(429, 430),(358,358)))
+    pygame.draw.polygon(okno, (0, 255, 0),((287, 430),(286, 288),(358,358)))
+    pygame.draw.polygon(okno, (255, 0, 0),((287, 288),(430, 288),(358,358)))
+    pygame.draw.polygon(okno, (0, 0, 255),((429,288),(429, 430),(358,358)))
 
     pygame.display.update()
 
